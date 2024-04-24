@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2; 
+}
+
+#nav-tiles-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.nav-tile {
+    user-select: none;
+    background-color: var(--primary-color);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.4s ease;
+}
+
+.nav-tile:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+}
