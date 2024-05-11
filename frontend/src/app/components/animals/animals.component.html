@@ -1,3 +1,10 @@
 <section>
-    <p>animals works!</p>
+    <div id="animals-wrapper">
+        <div *ngFor="let animal of animals" class="animal">
+            <p>Imię: {{ animal.name }}</p>
+            <p>Nakarmiony: {{ booleanToPl(animal.isFed) }}</p>
+            <p>Szczotkowany: {{ booleanToPl(animal.isBrushed) }}</p>
+            <p>Czysty: {{ booleanToPl(animal.isClean) }}</p>
+        </div>
+    </div>
 </section>

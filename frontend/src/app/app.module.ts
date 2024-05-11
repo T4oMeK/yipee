@@ -7,6 +7,7 @@ import { AnimalsComponent } from './components/animals/animals.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { StoreComponent } from './components/store/store.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { ProfileComponent } from './components/profile/profile.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideHttpClient(),
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
